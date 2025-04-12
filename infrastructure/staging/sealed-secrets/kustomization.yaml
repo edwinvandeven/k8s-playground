@@ -1,5 +1,11 @@
-resources:
-- ../../base/sealed-secrets/application.yaml
+  resources:
+  - ../../base/sealed-secrets
 
-patchesStrategicMerge:
-- patches/patch-targetRevision.yaml
+  patches:
+  - path: patches/patch-targetRevision.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: sealed-secrets
+      # namespace: argocd

@@ -1,7 +1,11 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: sealed-secrets
-spec:
-  source:
-    targetRevision: 1.16.1
+- op: replace #action 
+  path: /spec/source/targetRevision #resouirce we want to change
+  value: 1.16.1 #value we want to use for patching 
+
+# apiVersion: argoproj.io/v1alpha1
+# kind: Application
+# metadata:
+#   name: sealed-secrets
+# spec:
+#   source:
+#     targetRevision: 1.16.1
