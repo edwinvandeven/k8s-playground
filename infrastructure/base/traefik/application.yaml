@@ -5,12 +5,17 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source:
-    chart: traefik
+  sources:
+  - chart: traefik
     repoURL: https://traefik.github.io/charts
     targetRevision: override-me
     helm:
       releaseName: traefik
+      valueFiles:
+      - $values/override-me.yaml
+  - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
+    targetRevision: main
+    ref: values
   destination:
     server: "https://kubernetes.default.svc"
     namespace: traefik
