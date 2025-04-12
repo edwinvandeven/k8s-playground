@@ -1,0 +1,5 @@
+resources:
+- ../../base/sealed-secrets/application.yaml
+
+patchesStrategicMerge:
+- patches/patch-targetRevision.yaml
