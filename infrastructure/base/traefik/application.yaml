@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     chart: traefik
-    repoURL: ghcr.io/traefik/helm/traefik
+    repoURL: https://traefik.github.io/charts
     targetRevision: override-me
     helm:
       releaseName: sealed-secrets
