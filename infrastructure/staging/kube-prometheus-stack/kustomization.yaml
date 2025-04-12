@@ -1,0 +1,16 @@
+  resources:
+  - ../../base/kube-prometheus-stack
+
+  patches:
+  - path: patches/patch-targetRevision.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: kube-prometheus-stack
+  - path: patches/patch-valuesPath.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: kube-prometheus-stack

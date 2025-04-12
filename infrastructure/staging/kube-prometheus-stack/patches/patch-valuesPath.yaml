@@ -1,0 +1,4 @@
+- op: replace #action 
+  path: /spec/sources/0/helm/valueFiles/0 #resouirce we want to change
+  value: $values/infrastructure/staging/kube-prometheus-stack/chart/values.yaml #value we want to use for patching 
+

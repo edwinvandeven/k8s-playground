@@ -1,4 +1,5 @@
 ---
 resources:
 - sealed-secrets
+- kube-prometheus-stack
 - traefik
