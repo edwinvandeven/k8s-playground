@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: treafik
+  namespace: argocd
+spec:
+  project: default
+  source:
+    chart: traefik
+    repoURL: ghcr.io/traefik/helm/traefik
+    targetRevision: override-me
+    helm:
+      releaseName: sealed-secrets
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: traefik
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
