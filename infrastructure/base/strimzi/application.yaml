@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: strimzi-operator
+  namespace: argocd
+spec:
+  project: default
+  sources:
+  - chart: strimzi/strimzi-kafka-operator
+    repoURL: https://strimzi.io/charts
+    targetRevision: override-me
+    helm:
+      releaseName: strimzi-operator
+      valueFiles:
+      - $values/override-me.yaml
+  - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
+    targetRevision: main
+    ref: values
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: strimzi
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

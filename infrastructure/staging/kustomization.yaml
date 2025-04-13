@@ -1,5 +1,6 @@
 ---
 resources:
 - sealed-secrets
-- kube-prometheus-stack
+# - kube-prometheus-stack
+- strimzi
 - traefik
