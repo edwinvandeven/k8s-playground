@@ -13,4 +13,4 @@
       group: argoproj.io
       version: v1alpha1
       kind: Application
-      name: strimzi
+      name: strimzi-operator
