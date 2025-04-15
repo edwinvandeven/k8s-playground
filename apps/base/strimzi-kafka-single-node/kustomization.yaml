@@ -2,5 +2,5 @@
 resources:
 - namespace.yaml
 - kafka.yaml
-- kafkaaccess.yaml
+# - kafkaaccess.yaml
 - kafkanodepool.yaml
