@@ -3,5 +3,4 @@ resources:
 - sealed-secrets
 # - kube-prometheus-stack
 - strimzi
-- strimzi-kafka-single-node
 - traefik
