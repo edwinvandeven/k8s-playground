@@ -6,8 +6,8 @@ metadata:
 spec:
   project: default
   sources:
-  - chart: strimzi/strimzi-kafka-operator
-    repoURL: https://strimzi.io/charts
+  - chart: strimzi-kafka-operator
+    repoURL: quay.io/strimzi-helm
     targetRevision: override-me
     helm:
       releaseName: strimzi-operator
