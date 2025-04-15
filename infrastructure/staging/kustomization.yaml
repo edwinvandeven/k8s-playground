@@ -1,5 +1,6 @@
 ---
 resources:
+- metrics-server
 - sealed-secrets
 # - kube-prometheus-stack
 - strimzi

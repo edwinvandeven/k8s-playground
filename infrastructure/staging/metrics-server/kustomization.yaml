@@ -1,0 +1,10 @@
+  resources:
+  - ../../base/metrics-server
+
+  patches:
+  - path: patches/patch-targetRevision.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: metrics-server
