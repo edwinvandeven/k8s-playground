@@ -1,0 +1,6 @@
+---
+resources:
+- namespace.yaml
+- kafka.yaml
+- kafkaaccess.yaml
+- kafkanodepool.yaml
