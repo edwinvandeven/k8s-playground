@@ -11,6 +11,11 @@ spec:
     targetRevision: override-me
     helm:
       releaseName: metrics-server
+      valueFiles:
+      - $values/override-me.yaml
+  - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
+    targetRevision: main
+    ref: values
   destination:
     server: "https://kubernetes.default.svc"
     namespace: kube-system

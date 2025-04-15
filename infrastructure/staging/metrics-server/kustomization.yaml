@@ -8,3 +8,9 @@
       version: v1alpha1
       kind: Application
       name: metrics-server
+  - path: patches/patch-valuesPath.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: metrics-server
