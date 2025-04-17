@@ -1,3 +1,4 @@
 ---
 resources:
-- application.yaml
+  - namespace.yaml
+  - application.yaml
