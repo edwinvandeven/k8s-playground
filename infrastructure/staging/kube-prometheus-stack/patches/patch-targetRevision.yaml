@@ -1,4 +1,4 @@
-- op: replace #action 
+- op: replace #action
   path: /spec/sources/0/targetRevision #resouirce we want to change
-  value: 70.4.2 #value we want to use for patching 
+  value: 70.7.0 #value we want to use for patching
 
