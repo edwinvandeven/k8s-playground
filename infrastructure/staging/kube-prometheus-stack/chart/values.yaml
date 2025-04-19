@@ -20,6 +20,13 @@ prometheus:
 grafana:
   # This should be changed for prd to be read from a secret.
   adminPassword: hello-world
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    hosts:
+      - grafana.example.com
+    paths:
+      - /
 
 kubeEtcd:
   service:
