@@ -14,7 +14,7 @@ prometheus:
     hosts:
       - prometheus.example.com
     paths:
-      - path: /
+      - /
 
 
 grafana:
