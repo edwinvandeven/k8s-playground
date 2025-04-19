@@ -8,6 +8,15 @@ prometheus:
     retention: 1d
     podMonitorSelectorNilUsesHelmValues: false
     serviceMonitorSelectorNilUsesHelmValues: false
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    hosts:
+      - prometheus.example.com
+    paths:
+      - path: /
+
+
 grafana:
   # This should be changed for prd to be read from a secret.
   adminPassword: hello-world
