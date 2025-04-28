@@ -1,7 +1,7 @@
 ---
 resources:
-  # - metrics-server
-  # - sealed-secrets
-  # - kube-prometheus-stack
+  - metrics-server
+  - sealed-secrets
+  - kube-prometheus-stack
   - strimzi
-  # - traefik
+  - traefik

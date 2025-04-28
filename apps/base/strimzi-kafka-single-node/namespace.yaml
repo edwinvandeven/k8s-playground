@@ -4,7 +4,5 @@ kind: Namespace
 metadata:
   creationTimestamp: null
   name: kafka
-  labels:
-    argocd.argoproj.io/managed-by: argocd
 spec: {}
 status: {}
