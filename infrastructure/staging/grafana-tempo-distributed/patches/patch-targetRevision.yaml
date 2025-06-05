@@ -1,0 +1,4 @@
+- op: replace #action
+  path: /spec/sources/0/targetRevision #resouirce we want to change
+  value: 1.41.1 #value we want to use for patching
+

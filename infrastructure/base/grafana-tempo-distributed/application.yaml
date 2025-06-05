@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: grafana-tempo-distributed
+  namespace: argocd
+spec:
+  project: default
+  sources:
+  - chart: tempo-distributed
+    repoURL: https://grafana.github.io/helm-charts
+    targetRevision: override-me
+    helm:
+      releaseName: grafana-tempo-distributed
+      valueFiles:
+      - $values/override-me.yaml
+  - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
+    targetRevision: main
+    ref: values
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: grafana-tempo-distributed
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
