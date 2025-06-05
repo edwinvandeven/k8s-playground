@@ -10,7 +10,7 @@ spec:
     repoURL: https://grafana.github.io/helm-charts
     targetRevision: override-me
     helm:
-      releaseName: grafana-tempo-distributed
+      releaseName: tempo
       valueFiles:
       - $values/override-me.yaml
   - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
@@ -18,7 +18,7 @@ spec:
     ref: values
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: grafana-tempo-distributed
+    namespace: tracing
   syncPolicy:
     automated:
       prune: true
