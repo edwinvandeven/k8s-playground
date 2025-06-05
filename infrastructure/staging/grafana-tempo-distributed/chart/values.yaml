@@ -1,3 +1,7 @@
+gateway:
+  replicas: 1
+  enabled: true
+
 ingester:
   replicas: 1
 
