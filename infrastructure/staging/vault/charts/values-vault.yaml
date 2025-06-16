@@ -22,7 +22,7 @@ server:
         username = "vault"
         password = "password"
         database = "vault"
-        plaintext_credentials_transmission = "true"
+        plaintext_connection_allowed = "true"
         ha_enabled = "true"
       }
     disruptionBudget:
