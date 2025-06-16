@@ -6,7 +6,7 @@ ui:
   activeVaultPodOnly: false
 
 server:
-  affinity: ""
+  affinity: null
   ha:
     enabled: true
     replicas: 3
