@@ -2,8 +2,8 @@
 resources:
   - metrics-server
   - sealed-secrets
-  - grafana-tempo-distributed
   - kube-prometheus-stack
   - strimzi
+  - tracing
   - traefik
   - vault
