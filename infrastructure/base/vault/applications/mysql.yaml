@@ -7,7 +7,7 @@ spec:
   project: default
   sources:
   - chart: mysql
-    repoURL: registry-1.docker.io/bitnamicharts/mysql
+    repoURL: registry-1.docker.io/bitnamicharts
     targetRevision: override-me
     helm:
       releaseName: mysql
