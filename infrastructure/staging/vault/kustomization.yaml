@@ -1,0 +1,17 @@
+  resources:
+  - ../../base/vault
+
+  patches:
+  # MySQL
+  - path: patches/patch-targetRevision-mysql.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: mysql
+  - path: patches/patch-valuesPath-mysql.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: mysql

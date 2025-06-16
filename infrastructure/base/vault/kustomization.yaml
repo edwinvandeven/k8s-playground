@@ -1,0 +1,5 @@
+---
+resources:
+- namespace.yaml
+- applications/mysql.yaml
+# - applications/vault.yaml

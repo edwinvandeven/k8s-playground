@@ -1,0 +1,25 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mysql
+  namespace: argocd
+spec:
+  project: default
+  sources:
+  - chart: mysql
+    repoURL: registry-1.docker.io/bitnamicharts/mysql
+    targetRevision: override-me
+    helm:
+      releaseName: mysql
+      valueFiles:
+      - $values/override-me.yaml
+  - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
+    targetRevision: main
+    ref: values
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: vault
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
