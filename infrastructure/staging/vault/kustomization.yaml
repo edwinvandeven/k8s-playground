@@ -15,3 +15,16 @@
       version: v1alpha1
       kind: Application
       name: mysql
+  # MySQL
+  - path: patches/patch-targetRevision-vault.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: vault
+  - path: patches/patch-valuesPath-vault.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: vault
