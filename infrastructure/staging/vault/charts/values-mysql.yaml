@@ -1,6 +1,0 @@
-auth:
-  rootPassword: "password"
-  createDatabase: true
-  database: vault
-  user: vault
-  password: "password"
