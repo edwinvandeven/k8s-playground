@@ -1,0 +1,1 @@
+# This is a demo app using a vault secret provided by the secrets operator
