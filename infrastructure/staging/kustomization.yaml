@@ -2,6 +2,7 @@
 resources:
   - metrics-server
   - sealed-secrets
+  - falco
   - kube-prometheus-stack
   - strimzi
   - tracing
