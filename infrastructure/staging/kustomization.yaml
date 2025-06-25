@@ -7,3 +7,4 @@ resources:
   - tracing
   - traefik
   - vault
+  - vault-secrets-operator

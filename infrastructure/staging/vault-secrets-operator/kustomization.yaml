@@ -1,0 +1,16 @@
+  resources:
+  - ../../base/vault-secrets-operator
+
+  patches:
+  - path: patches/patch-targetRevision.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: vault
+  - path: patches/patch-valuesPath.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: vault
