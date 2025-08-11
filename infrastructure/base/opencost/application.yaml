@@ -14,8 +14,8 @@ spec:
       valueFiles:
       - $values/override-me.yaml
   - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
-  targetRevision: main
-  ref: values
+    targetRevision: main
+    ref: values
   destination:
     server: "https://kubernetes.default.svc"
     namespace: argocd
