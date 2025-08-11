@@ -3,6 +3,7 @@ resources:
   - metrics-server
   - sealed-secrets
   - falco
+  - kubecost
   - kube-prometheus-stack
   - opencost
   - strimzi

@@ -1,0 +1,16 @@
+resources:
+  - ../../base/kubecost
+
+patches:
+  - path: patches/patch-targetRevision.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: kubecost
+  - path: patches/patch-valuesPath.yaml
+    target:
+      group: argoproj.io
+      version: v1alpha1
+      kind: Application
+      name: kubecost
