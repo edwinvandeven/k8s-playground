@@ -17,5 +17,5 @@ opencost:
       description: Modified prices based on your internal pricing
       CPU: 1.25
       RAM: 0.50
+      GPU: 0.75
       storage: 0.25
-      
