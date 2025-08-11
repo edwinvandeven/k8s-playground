@@ -5,12 +5,17 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source:
-    chart: opencost
+  sources:
+  - chart: opencost
     repoURL: https://opencost.github.io/opencost-helm-chart
     targetRevision: override-me
     helm:
       releaseName: opencost
+      valueFiles:
+      - $values/override-me.yaml
+  - repoURL: 'https://github.com/edwinvandeven/k8s-playground.git'
+  targetRevision: main
+  ref: values
   destination:
     server: "https://kubernetes.default.svc"
     namespace: argocd
