@@ -19,3 +19,15 @@ opencost:
       RAM: 0.50
       GPU: 0.75
       storage: 0.25
+  metrics:
+    serviceMonitor:
+      # -- Create ServiceMonitor resource for scraping metrics using PrometheusOperator
+      enabled: true
+      # # -- Additional labels to add to the ServiceMonitor
+      # additionalLabels: {}
+      # # -- Specify if the ServiceMonitor will be deployed into a different namespace (blank deploys into same namespace as chart)
+      # namespace: ""
+      # # -- Additional annotations to add to the ServiceMonitor
+      # additionalAnnotations: {}
+      # # -- Interval at which metrics should be scraped
+      # interval: 30s
