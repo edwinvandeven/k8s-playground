@@ -24,9 +24,10 @@ opencost:
       # -- Create ServiceMonitor resource for scraping metrics using PrometheusOperator
       enabled: true
       # # -- Additional labels to add to the ServiceMonitor
-      # additionalLabels: {}
+      additionalLabels:
+        release: kube-prometheus-stack
       # # -- Specify if the ServiceMonitor will be deployed into a different namespace (blank deploys into same namespace as chart)
-      # namespace: ""
+      namespace: monitoring
       # # -- Additional annotations to add to the ServiceMonitor
       # additionalAnnotations: {}
       # # -- Interval at which metrics should be scraped
