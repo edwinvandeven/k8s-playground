@@ -1,1 +1,14 @@
 clusterName: minikube
+opencost:
+  prometheus:
+    internal:
+      # -- Use in-cluster Prometheus
+      enabled: true
+      # -- Service name of in-cluster Prometheus
+      serviceName: kube-prometheus-stack-prometheus
+      # -- Namespace of in-cluster Prometheus
+      namespaceName: monitoring
+      # -- Service port of in-cluster Prometheus
+      port: 80
+      # -- Scheme to use for in-cluster Prometheus
+      scheme: http
