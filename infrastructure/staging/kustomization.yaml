@@ -6,7 +6,7 @@ resources:
   - kube-prometheus-stack
   - opencost
   - strimzi
-  - tracing
+  # - tracing # Grafana Tempo
   - traefik
   - vault
   - vault-secrets-operator
