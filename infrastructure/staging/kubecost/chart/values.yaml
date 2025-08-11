@@ -3,3 +3,7 @@ global:
     enabled: false
     fqdn: http://kube-prometheus-stack-prometheus.monitoring.svc.cluster.local:9090
     insecureSkipVerify: false
+
+networkCosts:
+  enabled: true
+  logLevel: info # error, warn, info, debug, trace
