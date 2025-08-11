@@ -4,6 +4,7 @@ resources:
   - sealed-secrets
   - falco
   - kube-prometheus-stack
+  - opencost
   - strimzi
   - tracing
   - traefik
